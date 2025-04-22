@@ -24,11 +24,28 @@ Clone this repo.
 
 
 
-## Configuration
+## Gateway Config
 
 - Make a config JSON file, like `examples/config.json`.
 - Start daemon `node src/index.js examples/config.json`.
 - Set up both sides of the mapping; usually two `server` blocks in Nginx config.
+
+
+
+## SSO Center Config
+
+- Create app and set client_id and redirect_uris.
+- Prefer PKCE to eliminate the need for client_secret.
+- Make sure to have proper JWT support.
+
+Note: Tested with a self-hosted Zitadel instance as IdP. Worked perfectly.
+
+
+
+## Possible Future Plans
+
+- Support requiring particular roles from OIDC OP to allow access certain URL patterns.
+
 
 
 
@@ -37,3 +54,5 @@ Clone this repo.
 Copyright (c) 2025 Neruthes.
 
 Released with the GNU GPL 2.0 license.
+
+
