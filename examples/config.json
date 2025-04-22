@@ -1,0 +1,26 @@
+{
+    "port": 18562,
+    "placeholderPage": "/home/neruthes/DEV/access-gateway-oidc/examples/placeholderPage.html",
+    "mapping": {
+        "host": "dnas6.neruthes.xyz",
+        "src": "http://127.0.0.1:51639"
+    },
+    "ssoAuthorities": [
+        {
+            "name": "Nekostein SSO",
+            "issuer": "https://authmatter.nekostein.com/oidc",
+            "authorization_endpoint": "https://authmatter.nekostein.com/oidc/auth",
+            "token_endpoint": "https://authmatter.nekostein.com/oidc/token",
+            "jwks_uri": "https://authmatter.nekostein.com/oidc/jwks",
+            "client_id": "dnas6.neruthes.xyz"
+        },
+        {
+            "name": "ShinonomeTN SSO",
+            "issuer": "https://id.shinonometn.com",
+            "authorization_endpoint": "https://id.shinonometn.com/oauth/v2/authorize",
+            "token_endpoint": "https://id.shinonometn.com/oauth/v2/token",
+            "jwks_uri": "https://id.shinonometn.com/oauth/v2/keys",
+            "client_id": "316769452785991683"
+        }
+    ]
+}
