@@ -14,7 +14,9 @@ Suppose you use default port 18562, browser requests often go through this chain
 - nginx:22222 (from `node`) (This is the real web server that reads your filesystem)
 
 
-
+Tested with a self-hosted Zitadel instance as IdP.
+Also tested with an AuthMatter instance.
+Both worked perfectly.
 
 
 ## Installation
@@ -37,8 +39,6 @@ Clone this repo.
 - Create app and set client_id and redirect_uris.
 - Prefer PKCE to eliminate the need for client_secret.
 - Make sure to have proper JWT support.
-
-Note: Tested with a self-hosted Zitadel instance as IdP. Worked perfectly.
 
 
 
